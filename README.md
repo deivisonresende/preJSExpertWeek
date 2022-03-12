@@ -11,7 +11,7 @@ Funções geradoras ([function*](https://developer.mozilla.org/pt-BR/docs/Web/Ja
 function* palavra(){}
 ``` 
 
-utilizada conjunto com a palavra chave [yield](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/function*),podem ser utilizadas para **processamento de dados sob demanda** (streams / fluxos), onde yeld retorna "data", antes do loop terminar. Desta forma, o client recebe os dados a medida em que é processado, como por exemplo:
+utilizada conjunto com a palavra chave [yield](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/function*),podem ser utilizadas para **processamento de dados sob demanda** (streams / corrente - como a de um rio), onde yeld retorna "data", antes do loop terminar. Desta forma, o client recebe os dados a medida em que é processado, como por exemplo:
 
 ```javascript
 
@@ -59,4 +59,4 @@ async function handler(request, response) {
 )
 ``` 
 
-são **"canalizadores"**, que _conduzem_ os dados _direcionando-os_ para o fluxos(streams) definidos. Podem ser utilizados vários "pipes", para realizar diferentes tratamentos a medidas que dos **chuncks**/dados são conduzidos pelos fluxos.
+são **"canalizadores"**, que _conduzem_ os dados _direcionando-os_ para os fluxos/correntes(streams) definidos. Podem ser utilizados vários "pipes", para realizar diferentes tratamentos a medida que os **chuncks**/dados são conduzidos pelos fluxos.
